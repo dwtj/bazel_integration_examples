@@ -1,10 +1,10 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
-exports_files(["hello.h"])
+exports_files(["hello.hpp"])
 
 cc_library(
     name = "my_cc_library",
-    hdrs = ["hello.h"],
+    hdrs = ["hello.hpp"],
     srcs = ["hello.cc"],
     visibility = ["//visibility:public"],
 )
