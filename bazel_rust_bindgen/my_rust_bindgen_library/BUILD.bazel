@@ -4,4 +4,5 @@ rust_bindgen_library(
     name = "my_rust_bindgen_library",
     cc_lib = "//my_cc_library",
     header = "//my_cc_library:hello.hpp",
+    visibility = ["//visibility:public"],
 )
